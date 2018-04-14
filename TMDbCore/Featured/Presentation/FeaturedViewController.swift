@@ -24,14 +24,19 @@ class FeaturedViewController: UIViewController {
 
 	private let presenter: FeaturedPresenter
 	private let cardPresenter: CardPresenter
+    
+    private let searchNavigator: SearchNavigator
+    
 	private let disposeBag = DisposeBag()
 
 	// MARK: - Initialization
 
 	init(presenter: FeaturedPresenter,
-	     cardPresenter: CardPresenter) {
+	     cardPresenter: CardPresenter,
+         searchNavigator: SearchNavigator) {
 		self.presenter = presenter
 		self.cardPresenter = cardPresenter
+        self.searchNavigator = searchNavigator
 
 		super.init(nibName: nil, bundle: Bundle(for: type(of: self)))
 	}
@@ -45,6 +50,8 @@ class FeaturedViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        searchNavigator.installSearch(in: self)
+        
         presenter.view = self
 		presenter.didLoad()
     }

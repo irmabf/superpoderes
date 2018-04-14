@@ -89,6 +89,7 @@
 		B76D259F20823F4C00543B78 /* FeaturedPresentedTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76D259E20823F4C00543B78 /* FeaturedPresentedTests.swift */; };
 		B76D25A12082427100543B78 /* DetailNavigatorMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76D25A02082427100543B78 /* DetailNavigatorMock.swift */; };
 		B76D25A32082480400543B78 /* FeaturedViewMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76D25A22082480400543B78 /* FeaturedViewMock.swift */; };
+		B76D25A720824FFA00543B78 /* SearchNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76D25A620824FFA00543B78 /* SearchNavigator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -222,6 +223,7 @@
 		B76D259E20823F4C00543B78 /* FeaturedPresentedTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedPresentedTests.swift; sourceTree = "<group>"; };
 		B76D25A02082427100543B78 /* DetailNavigatorMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailNavigatorMock.swift; sourceTree = "<group>"; };
 		B76D25A22082480400543B78 /* FeaturedViewMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeaturedViewMock.swift; sourceTree = "<group>"; };
+		B76D25A620824FFA00543B78 /* SearchNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchNavigator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -491,6 +493,7 @@
 		99B9E71B2080BF15001DD8C8 /* Search */ = {
 			isa = PBXGroup;
 			children = (
+				B76D25A420824FBB00543B78 /* Navigation */,
 				99B9E7202080BF9F001DD8C8 /* Presentation */,
 				99B9E71C2080BF29001DD8C8 /* Domain */,
 				99B9E71D2080BF38001DD8C8 /* DI */,
@@ -531,6 +534,14 @@
 			children = (
 				B76D259A2082136400543B78 /* DetailNavigator.swift */,
 				B76D259C208214BA00543B78 /* PushDetailNavigator.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		B76D25A420824FBB00543B78 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				B76D25A620824FFA00543B78 /* SearchNavigator.swift */,
 			);
 			path = Navigation;
 			sourceTree = "<group>";
@@ -760,6 +771,7 @@
 				9901C11E2080ABA300714957 /* WebService.swift in Sources */,
 				9901C1182080A94800714957 /* Endpoint.swift in Sources */,
 				99B8DA842080D3CE00D07287 /* Media.swift in Sources */,
+				B76D25A720824FFA00543B78 /* SearchNavigator.swift in Sources */,
 				99B9E7122080BE07001DD8C8 /* Date+Utils.swift in Sources */,
 				993D56622080DDFA00FB9F85 /* PosterStripLayout.swift in Sources */,
 				99B8DA7A2080D34100D07287 /* SearchResultPresenter.swift in Sources */,

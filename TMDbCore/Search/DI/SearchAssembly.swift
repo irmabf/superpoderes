@@ -14,6 +14,10 @@ final class SearchAssembly {
 	init(imageLoadingAssembly: ImageLoadingAssembly) {
 		self.imageLoadingAssembly = imageLoadingAssembly
 	}
+    
+    func searchNavigator() -> SearchNavigator {
+        return SearchNavigator(searchViewControllerProvider: self)
+    }
 
 	func presenter() -> SearchPresenter {
 		return SearchPresenter()
